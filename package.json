@@ -15,7 +15,8 @@
     "react-dom": "18.2.0",
     "react-firebaseui": "6.0.0",
     "react-scripts": "5.0.1",
-    "react-to-print": "2.14.13"
+    "react-to-print": "2.14.13",
+    "web3": "1.10.4"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
