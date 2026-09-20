@@ -14,6 +14,7 @@ import template9 from "../cert_templates/Template9.gif";
 import template10 from "../cert_templates/Template10.jpg";
 import template11 from "../cert_templates/Template11.png";
 import ReactToPrint from 'react-to-print';
+import CredentialRegistration from '../blockchain/CredentialRegistration';
 
 export class ComponentToPrint extends React.PureComponent {
     render() {
@@ -276,6 +277,7 @@ function Homepage() {
     const [template,settemplate]=useState('template4');
     const componentRef = useRef();
     const [theme, setTheme] = useState("dark");
+    const credentialData = { template, title: heading, learner: name, description: desc, issuer: author, logo };
     const handlePrint = useReactToPrint({
         content: () => componentRef.current,
     });
@@ -376,6 +378,7 @@ function Homepage() {
                             trigger={() => <button className="generate" >Download</button>}
                             content={() => componentRef.current}
                         />
+                        <CredentialRegistration credential={credentialData} />
                     </div>
                 </div>
             </div>
