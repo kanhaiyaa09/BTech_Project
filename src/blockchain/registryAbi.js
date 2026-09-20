@@ -1,0 +1,8 @@
+export const ACADEMICHAIN_REGISTRY_ABI = [
+  {"inputs":[{"internalType":"address","name":"issuer","type":"address"}],"name":"setIssuer","outputs":[],"stateMutability":"nonpayable","type":"function"},
+  {"inputs":[{"internalType":"bytes32","name":"credentialHash","type":"bytes32"}],"name":"registerCredential","outputs":[],"stateMutability":"nonpayable","type":"function"},
+  {"inputs":[{"internalType":"bytes32","name":"credentialHash","type":"bytes32"}],"name":"revokeCredential","outputs":[],"stateMutability":"nonpayable","type":"function"},
+  {"inputs":[{"internalType":"bytes32","name":"credentialHash","type":"bytes32"}],"name":"verifyCredential","outputs":[{"internalType":"bool","name":"exists","type":"bool"},{"internalType":"bool","name":"active","type":"bool"},{"internalType":"address","name":"issuer","type":"address"},{"internalType":"uint256","name":"issuedAt","type":"uint256"}],"stateMutability":"view","type":"function"},
+  {"inputs":[{"internalType":"bytes32","name":"credentialHash","type":"bytes32"}],"name":"getProvenanceCount","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},
+  {"inputs":[{"internalType":"bytes32","name":"credentialHash","type":"bytes32"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"getProvenanceEvent","outputs":[{"internalType":"string","name":"eventType","type":"string"},{"internalType":"address","name":"actor","type":"address"},{"internalType":"uint256","name":"timestamp","type":"uint256"}],"stateMutability":"view","type":"function"}
+];
